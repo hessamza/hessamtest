@@ -1,0 +1,27 @@
+{
+  "name": "Hessam/MailQueueBundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "c\\MailQueueBundle\\": ""
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+    ]
+  },
+  "require": {
+    "symfony/framework-bundle": "^3.2",
+    "doctrine/orm": "^2.5",
+    "doctrine/doctrine-bundle": "^1.6",
+    "symfony/swiftmailer-bundle": "~2.3"
+  },
+  "require-dev":{
+    "doctrine/doctrine-cache-bundle": "^1.2",
+    "incenteev/composer-parameter-handler": "^2.0",
+    "symfony/polyfill-apcu": "^1.0",
+    "symfony/symfony": "3.2.*"
+  }
+}

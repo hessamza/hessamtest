@@ -1,0 +1,7 @@
+vendor
+Tests/var/*
+!Tests/var/.gitkeep
+!Tests/var/SymfonyRequirements.php
+composer.lock
+.idea
+Tests/app/config/parameters.yml

@@ -1,0 +1,12 @@
+services:
+  bugloos_mail_queue.spool.database_spool:
+      class: Hessam\MailQueueBundle\Spool\DatabaseSpool
+      arguments:
+        - "@doctrine.orm.default_entity_manager"
+        - "%kernel.environment%"
+        - "%bugloos_mail_queue.keep_sent_messages%"
+        - "%bugloos_mail_queue.keep_time%"
+  swiftmailer.spool.db:
+      alias: bugloos_mail_queue.spool.database_spool
+  swiftmailer.mailer.default.spool.db:
+      alias: bugloos_mail_queue.spool.database_spool
